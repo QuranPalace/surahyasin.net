@@ -1,9 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/sura/<int:surahnumber>')
-def hello_world(surahnumber):
-    if surahnumber == 36:
+@app.route('/surah/<int:surahnumber>')
+def surah(surahnumber):
+    if surahnumber== 36:
         print ":)"
     else:
         print ":("
